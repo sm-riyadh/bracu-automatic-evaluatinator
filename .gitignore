@@ -1,5 +1,8 @@
-# Project Stuff
+# Project stuff
 *.png
+
+# IDE stuff
+.idea
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
