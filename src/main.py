@@ -13,7 +13,7 @@ faculty_rating = None
 
 
 def main(_eval_code, _do_confirm, _ans, ):
-    print("Loading drivers...")
+    print("🎛 Loading drivers...")
     options = Options()
     if _do_confirm == 'n':
         options.add_argument('--headless')
@@ -25,7 +25,7 @@ def main(_eval_code, _do_confirm, _ans, ):
 
     url = 'https://bout.eveneer.xyz/evaluation-form'
     driver.get(url)
-    print("Evaluation...")
+    print("👨‍⚖️ Evaluation...")
     time.sleep(4)
 
     input_field = driver.find_element(By.TAG_NAME, 'input')
@@ -45,8 +45,8 @@ def main(_eval_code, _do_confirm, _ans, ):
                 radios[i].click()
 
     if _do_confirm == 'n':
-        print('Taking screenshot...')
-        save_screenshot(driver, f'./screenshots/{eval_code}.png')
+        print('📸 Taking screenshot...')
+        save_screenshot(driver, f'./screenshots/{eval_code}-{datetime.now()}.png')
 
         button = driver.find_element(By.TAG_NAME, 'button')
         button.click()
