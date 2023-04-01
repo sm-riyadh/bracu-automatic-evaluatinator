@@ -25,7 +25,7 @@ def main(_eval_code, _do_confirm, _ans, ):
 
     url = 'https://bout.eveneer.xyz/evaluation-form'
     driver.get(url)
-    print("👨‍⚖️ Evaluation...")
+    print("🖊 Evaluation...")
     time.sleep(4)
 
     input_field = driver.find_element(By.TAG_NAME, 'input')
