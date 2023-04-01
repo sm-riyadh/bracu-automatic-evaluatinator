@@ -1,4 +1,4 @@
-# The BRACU Automatic Evaluate-inator
+# The BRACU Automatic Evaluatinator
 
 The "BRACU Automatic Evaluate-inator" is a Python script that automates the course and faculty evaluation process for
 BRAC University students. With this script, you can complete the evaluation forms automatically, rate the courses and
