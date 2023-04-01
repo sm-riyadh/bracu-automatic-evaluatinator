@@ -20,7 +20,7 @@ def main(_eval_code, _do_confirm, _ans, ):
 
     options.add_experimental_option('detach', True)
 
-    service = Service('./chromedriver_linux64/chromedriver')
+    service = Service('../drivers/chromedriver')
     driver = webdriver.Chrome(service=service, options=options)
 
     url = 'https://bout.eveneer.xyz/evaluation-form'
