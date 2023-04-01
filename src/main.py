@@ -46,7 +46,7 @@ def main(_eval_code, _do_confirm, _ans, ):
 
     if _do_confirm == 'n':
         print('Taking screenshot...')
-        save_screenshot(driver, f'./screenshot-{eval_code}.png')
+        save_screenshot(driver, f'./screenshots/{eval_code}.png')
 
         button = driver.find_element(By.TAG_NAME, 'button')
         button.click()
